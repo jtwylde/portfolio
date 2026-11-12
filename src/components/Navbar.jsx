@@ -56,14 +56,18 @@ function Navbar({ navVis, setNavVis, projects, location }) {
           about
         </button>
       </Link>
-      <Link to="blog.jordanwb.dev">
+      <a 
+        href="https://blog.jordanwb.dev" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
         <button
           className="text-white hover:bg-slate-200 hover:text-black hover:shadow-lg transition ease-out delay-50 px-3 p-2 text-left sm:font-medium w-full"
           onClick={setNavVis}
         >
           blog
         </button>
-      </Link>
+      </a>
 
       <h1 className="text-5xl mb-2 sm:text-4xl w-full sm:w-min text-white text-left font-bold px-3 p-2 select-none sm:after:block after:relative after:left-[110%] after:top-[-40%] after:bg-white after:h-0.5 after:w-14 after:z-20">
         projects
